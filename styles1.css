@@ -1,0 +1,14 @@
+.card-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
