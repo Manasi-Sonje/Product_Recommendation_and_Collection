@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Related Products</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .large-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            position: relative;
+        }
+        .card-checkbox {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Style Your Look</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="checkbox" class="card-checkbox">
+                <img src="images/p1.png" class="large-img" alt="Large Product">
+            </div>
+            <div class="col-md-8">
+               <h2 class="text-center mb-4"> Recommended For You </h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <input type="checkbox" class="card-checkbox" data-product="jeans">
+                            <img src="images/jeans.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <input type="checkbox" class="card-checkbox" data-product="shoes">
+                            <img src="images/shoes.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Shoes</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <input type="checkbox" class="card-checkbox" data-product="wallet">
+                            <img src="images/wallet.jpg" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wallet</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="collections.html"><button id="enterNameButton" class="btn btn-primary">Add to New Collection</button></a>
+                    <p id="displayName"></p>
+                </div>
+            
+                <center><a href="collections.html" id="addToExisting" class="btn btn-primary">Add to Existing Collection</a></center>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
